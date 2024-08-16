@@ -12,8 +12,16 @@
  * @return {Array}
  */
 let findAll = function (array, n) {
-  
-};
+    let result = []
+    for (let i = 0; i < array.length(); i++) {
+        if (n === array[i]) {
+            result = result + i
+        }
+    }
+    return result
+}
+
+
 
 
 // 2. write a function that takes a string as an argument
@@ -23,8 +31,22 @@ let findAll = function (array, n) {
 //
 // Note : you can`t use any built-in functions .
 
-let reverseWord=(string) => {
+let reverseWord = (string) => {
+    for (let i = -1; i = 0; i--) {
+        if (string[i] === " ") {
 
+        }
+
+    }
+
+}
+let reverseWord2 = (string) => {
+    let arr = [" "]
+    arr = [...string]
+    for (let i = -1; arr.length = 0; i--) {
+        arr.push(arr[i])
+    }
+    return arr
 }
 
 
@@ -36,11 +58,21 @@ let reverseWord=(string) => {
  * @return {Array<string>}
  */
 
-let sameLength=(array) => {
+let sameLength = (array) => {
+    let result = []
+    for (let i = 0; i < array.length(); i++) {
+        for (let j = 1; j < array.length(); j++) {
+            if (array[i] === array[j]) {
+                result = result + array[i] + array[j]
+
+            }
+        }
+    }
+    return result
 
 }
 
-  
+
 function sameLength(array) {
-  
+
 }
